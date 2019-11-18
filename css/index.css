@@ -148,7 +148,7 @@ html {
   font-size: 62.5%;
 }
 header .nav {
-  background: #313D5A;
+  background: #73628A;
 }
 header .nav nav {
   width: 90%;
@@ -157,6 +157,12 @@ header .nav nav {
   align-items: center;
   margin: 0 5%;
 }
+@media (max-width: 500px) {
+  header .nav nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 header .nav nav .links {
   width: 60%;
   display: flex;
@@ -164,33 +170,127 @@ header .nav nav .links {
   height: 5rem;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .nav nav .links {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12rem;
+    border-right: 2px #EAEAEA solid;
+  }
+  header .nav nav .links i {
+    display: none;
+  }
+}
 header .nav nav .links a {
   text-decoration: none;
   font-family: 'Merriweather', serif;
-  color: #EAEAEA;
+  color: #183642;
   font-size: 1.1rem;
 }
 header .nav nav .login {
-  width: 10%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 5rem;
 }
+@media (max-width: 500px) {
+  header .nav nav .login {
+    font-size: 1rem;
+  }
+}
 header .nav nav .login a {
   text-decoration: none;
   font-family: 'Merriweather', serif;
-  color: #EAEAEA;
+  color: #183642;
   font-size: 1.25rem;
+  text-align: center;
 }
 header .title {
   display: flex;
   justify-content: space-evenly;
-  height: 15rem;
+  height: 25rem;
   align-items: center;
+  background: #313D5A;
+}
+@media (max-width: 500px) {
+  header .title {
+    height: 15rem;
+  }
+}
+@media (max-width: 1000px) {
+  header .title {
+    height: 20rem;
+  }
 }
 header .title .wunder {
+  display: flex;
+  justify-content: center;
   font-family: 'Permanent Marker', cursive;
   width: 50%;
   font-size: 5rem;
+}
+@media (max-width: 1000px) {
+  header .title .wunder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30%;
+  }
+}
+@media (max-width: 500px) {
+  header .title .wunder {
+    margin: 0 3%;
+    font-size: 4rem;
+    margin: 0 15%;
+  }
+}
+header .title .wunder h1 {
+  color: #CBC5EA;
+}
+header .title .headimg {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+header .title .headimg img {
+  width: 50%;
+  border-radius: 75%;
+  border: 2px #EAEAEA solid;
+}
+@media (max-width: 1000px) {
+  header .title .headimg img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header .title .headimg img {
+    display: none;
+  }
+}
+header .abtsection {
+  background: #313D5A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .abtsection h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+  padding: 0 22.5% 0 22.5%;
+  color: #EAEAEA;
+}
+header .abtsection p {
+  color: #EAEAEA;
+  font-size: 1.5rem;
+  padding: 3% 25% 3% 25%;
+  text-align: justify;
+}
+@media (max-width: 500px) {
+  header .abtsection p {
+    padding: 10% 10%;
+    font-size: 1rem;
+  }
 }
