@@ -1,0 +1,56 @@
+header{
+    
+    .nav{
+        background: @sectionbgcolor;
+        nav{
+            width: 90%;
+            .flex(row,space-between,center);
+            margin:0 5%;
+            @media @mobile{
+                .flex(row,space-evenly,center);
+            }
+            .links{
+                width: 60%;
+                .flex(row,space-between,center);
+                height: 5rem;
+                @media @mobile{
+                    .flex(column,space-evenly,center);
+                    height: 12rem;
+                    border-right:2px @bodyfontcolor solid;
+                    i{
+                        display:none;
+                    }
+                }
+                a{
+                    text-decoration:none;
+                    font-family:@bodyfont;
+                    color:@headcolor;
+                    font-size:1.1rem;
+                    &:hover{
+                        color: @headfontcolor;
+                    }
+                }
+                
+            }
+            .login{
+                width:30%;
+                .flex(row,flex-end,center);
+                height:5rem;
+                @media @mobile{
+                    font-size: 1rem;
+                    
+                }
+                a{
+                    text-decoration:none;
+                    font-family:@bodyfont;
+                    color:@headcolor;
+                    font-size:1.25rem;
+                    text-align:center;
+                    &:hover{
+                        color: @headfontcolor;
+                    }
+                }
+            }
+        }
+    }
+}
