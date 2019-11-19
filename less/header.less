@@ -33,7 +33,11 @@ header{
                     font-family:@bodyfont;
                     color:@headcolor;
                     font-size:1.1rem;
+                    &:hover{
+                        color: @headfontcolor;
+                    }
                 }
+                
             }
             .login{
                 width:30%;
@@ -51,80 +55,10 @@ header{
                     color:@headcolor;
                     font-size:1.25rem;
                     text-align:center;
+                    &:hover{
+                        color: @headfontcolor;
+                    }
                 }
-            }
-        }
-    }
-    .title{
-        display:flex;
-        justify-content:space-evenly;
-        height: 25rem;
-        align-items:center;
-        background:@navbarbgcolor;
-        @media @mobile{
-            height:15rem;
-        }
-        @media @tablet{
-            height: 20rem;
-        }
-        .wunder{
-            display:flex;
-            justify-content:center;
-            font-family:@headfont;
-            width:50%;
-            font-size: 5rem;
-            @media @tablet{
-                width: 100%;
-                display:flex;
-                justify-content:center;
-                align-items: center;
-                margin: 30%;
-            }
-            @media @mobile{
-                margin:0 3%;
-                font-size:4rem;
-                margin: 0 15%;
-            }
-            h1{
-                color:@headfontcolor;
-            }
-        }
-        .headimg{
-            display:flex;
-            justify-content:center;
-            width:50%;
-            img{
-                width: 50%;
-                border-radius:75%;
-                border:2px @bodyfontcolor solid;
-                @media @tablet{
-                    display:none;
-                }
-                @media @mobile{
-                    display:none;
-                }
-            }
-        }
-    }
-    .abtsection{
-        background:@navbarbgcolor;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        h2{
-            font-family:@headfont;
-            font-size: 2.5rem;
-            padding: 0 22.5% 0 22.5%;
-            color:@bodyfontcolor;
-        }
-        p{
-            color: @bodyfontcolor;
-            font-size: 1.5rem;
-            padding: 3% 25% 3% 25%;
-            text-align:justify;
-            @media @mobile{
-                padding: 10% 10%;
-                font-size: 1rem;
             }
         }
     }

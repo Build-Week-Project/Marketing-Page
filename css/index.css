@@ -147,6 +147,93 @@ html {
   margin: 0 auto;
   font-size: 62.5%;
 }
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25rem;
+  align-items: center;
+  background: #313D5A;
+}
+@media (max-width: 500px) {
+  .title {
+    height: 15rem;
+  }
+}
+@media (max-width: 1000px) {
+  .title {
+    height: 20rem;
+  }
+}
+.title .wunder {
+  display: flex;
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+  width: 50%;
+  font-size: 5rem;
+}
+@media (max-width: 1000px) {
+  .title .wunder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .title .wunder {
+    margin: 0 3%;
+    font-size: 4rem;
+    margin: 0 15%;
+  }
+}
+.title .wunder h1 {
+  color: #CBC5EA;
+}
+.title .headimg {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.title .headimg img {
+  width: 50%;
+  border-radius: 75%;
+  border: 2px #EAEAEA solid;
+}
+@media (max-width: 1000px) {
+  .title .headimg img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .title .headimg img {
+    display: none;
+  }
+}
+.abtsection {
+  background: #313D5A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abtsection h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+  padding: 0 22.5% 0 22.5%;
+  color: #EAEAEA;
+}
+.abtsection p {
+  color: #EAEAEA;
+  font-size: 1.5rem;
+  padding: 3% 25% 3% 25%;
+  text-align: justify;
+}
+@media (max-width: 500px) {
+  .abtsection p {
+    padding: 10% 10%;
+    font-size: 1rem;
+  }
+}
 header .nav {
   background: #73628A;
 }
@@ -188,6 +275,9 @@ header .nav nav .links a {
   color: #183642;
   font-size: 1.1rem;
 }
+header .nav nav .links a:hover {
+  color: #CBC5EA;
+}
 header .nav nav .login {
   width: 30%;
   display: flex;
@@ -207,90 +297,6 @@ header .nav nav .login a {
   font-size: 1.25rem;
   text-align: center;
 }
-header .title {
-  display: flex;
-  justify-content: space-evenly;
-  height: 25rem;
-  align-items: center;
-  background: #313D5A;
-}
-@media (max-width: 500px) {
-  header .title {
-    height: 15rem;
-  }
-}
-@media (max-width: 1000px) {
-  header .title {
-    height: 20rem;
-  }
-}
-header .title .wunder {
-  display: flex;
-  justify-content: center;
-  font-family: 'Permanent Marker', cursive;
-  width: 50%;
-  font-size: 5rem;
-}
-@media (max-width: 1000px) {
-  header .title .wunder {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30%;
-  }
-}
-@media (max-width: 500px) {
-  header .title .wunder {
-    margin: 0 3%;
-    font-size: 4rem;
-    margin: 0 15%;
-  }
-}
-header .title .wunder h1 {
+header .nav nav .login a:hover {
   color: #CBC5EA;
-}
-header .title .headimg {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-header .title .headimg img {
-  width: 50%;
-  border-radius: 75%;
-  border: 2px #EAEAEA solid;
-}
-@media (max-width: 1000px) {
-  header .title .headimg img {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  header .title .headimg img {
-    display: none;
-  }
-}
-header .abtsection {
-  background: #313D5A;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header .abtsection h2 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 2.5rem;
-  padding: 0 22.5% 0 22.5%;
-  color: #EAEAEA;
-}
-header .abtsection p {
-  color: #EAEAEA;
-  font-size: 1.5rem;
-  padding: 3% 25% 3% 25%;
-  text-align: justify;
-}
-@media (max-width: 500px) {
-  header .abtsection p {
-    padding: 10% 10%;
-    font-size: 1rem;
-  }
 }
