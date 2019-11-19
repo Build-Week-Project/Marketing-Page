@@ -1,8 +1,6 @@
 .title{
-    display:flex;
-    justify-content:space-evenly;
+    .flex(row,space-evenly,center);
     height: 25rem;
-    align-items:center;
     background:@navbarbgcolor;
     @media @mobile{
         height:15rem;
@@ -11,16 +9,13 @@
         height: 20rem;
     }
     .wunder{
-        display:flex;
-        justify-content:center;
+        .flex(row,center,center);
         font-family:@headfont;
         width:50%;
         font-size: 5rem;
         @media @tablet{
             width: 100%;
-            display:flex;
-            justify-content:center;
-            align-items: center;
+            .flex(row,center,center);
             margin: 30%;
         }
         @media @mobile{
@@ -33,8 +28,7 @@
         }
     }
     .headimg{
-        display:flex;
-        justify-content:center;
+        .flex(row,center,center);
         width:50%;
         img{
             width: 50%;
@@ -51,9 +45,7 @@
 }
 .abtsection{
     background:@navbarbgcolor;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    .flex(column,center,center);
     h2{
         font-family:@headfont;
         font-size: 2.5rem;
