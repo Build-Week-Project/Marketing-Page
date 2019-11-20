@@ -1,21 +1,25 @@
-footer{
-    background: @sectionbgcolor;
-    .flex(row, space-evenly,center);
-    height: 10vh;
-    div{
-        padding: 5%;
-        p{
-            font-size: 1rem;
-            font-family:@bodyfont;
-            color:@headcolor;
-        }
-        ul{
-            font-size: 1rem;
-            font-family:@bodyfont;
-            color:@headcolor;
-        }
-        .wunder{
-            font-family:@headfont;
-        }
+footer {
+  padding: 1% 0%;
+  background: @sectionbgcolor;
+  .flex(row, space-evenly, center);
+  height: 10vh;
+  div {
+    p {
+      font-size: 1rem;
+      font-family: @bodyfont;
+      color: @headcolor;
+      @media @mobile {
+        font-size: 0.8rem;
+      }
     }
+    ul {
+      padding: 1% 0%;
+      font-size: 0.8rem;
+      font-family: @bodyfont;
+      color: @headcolor;
+    }
+    .wunder {
+      font-family: @headfont;
+    }
+  }
 }
