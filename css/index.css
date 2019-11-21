@@ -423,12 +423,12 @@ header .nav nav .login a:hover {
     padding: 5% 0;
   }
 }
-.section2 .right {
+.section2 .contains .right {
   flex-direction: row-reverse;
   align-content: center;
 }
 @media (max-width: 500px) {
-  .section2 .right {
+  .section2 .contains .right {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -437,7 +437,7 @@ header .nav nav .login a:hover {
   }
 }
 @media (max-width: 1000px) {
-  .section2 .right {
+  .section2 .contains .right {
     width: 100%;
     display: flex;
     flex-direction: column;

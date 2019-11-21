@@ -88,17 +88,18 @@
         margin: 0%;
         padding:5% 0;
       }
-  }
-  .right {
-    flex-direction: row-reverse;
-    align-content: center;
-    @media @mobile {
-      width: 100%;
-      .flex(column, space-evenly, center);
-    }
-    @media @tablet {
-      width: 100%;
-      .flex(column, space-evenly, center);
+        
+      .right {
+      flex-direction: row-reverse;
+      align-content: center;
+      @media @mobile {
+        width: 100%;
+        .flex(column, space-evenly, center);
+      }
+      @media @tablet {
+        width: 100%;
+        .flex(column, space-evenly, center);
+      }
     }
   }
 }
