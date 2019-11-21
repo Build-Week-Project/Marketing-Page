@@ -4,3 +4,16 @@
     justify-content:@justify;
     align-items:@align;
 }
+.button(@bgcolor,@color) {
+    margin: 0 0 5% 0;
+    padding: 2% 2% 2.5% 2%;
+    font-size: 3rem;
+    height: 2.5rem;
+    background: @bgcolor;
+    color: @color;
+    border-radius: 50%;
+    @media @mobile{
+      padding: 3% 3% 4% 3%;
+      
+    }
+  }
